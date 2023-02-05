@@ -3,6 +3,8 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
+import app from '../assets/img/app.png'
+import email from '../assets/img/email.jpg'
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
 import {
@@ -49,10 +51,10 @@ export const NavBar = () => {
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
             <span className="navbar-text">
-              <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+            <div className="social-icon">
+                <a href="https://www.linkedin.com/in/vincent-kirui-b814101a2/"><img src={navIcon1} alt="" /></a>
+                <a href=" https://wa.me/254799476072"><img src={app} alt="" /></a>
+                <a href="mailto:kiruivinie1@gmail.com"><img src={email} alt="" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
