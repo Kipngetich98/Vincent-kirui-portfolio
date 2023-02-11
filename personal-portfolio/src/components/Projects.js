@@ -4,7 +4,8 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import creditscoring from '../assets/img/creditscoring.png'
+import creditscoring from '../assets/img/creditscoring.png';
+import scraped from "../assets/img/scraped.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -17,9 +18,9 @@ export const Projects = () => {
       imgUrl: creditscoring,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Web scraping with Selenium and python ",
+      description: "Scraping top machine learning open source projects in Github Collect with selenium python on Chrome. the image is the final data imported to a csv file",
+      imgUrl: scraped,
     },
     {
       title: "Business Startup",
