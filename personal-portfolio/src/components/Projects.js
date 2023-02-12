@@ -6,6 +6,7 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import creditscoring from '../assets/img/creditscoring.png';
 import scraped from "../assets/img/scraped.jpg";
+import propertyImage from "../assets/img/propertyImage.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -23,9 +24,9 @@ export const Projects = () => {
       imgUrl: scraped,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Property/Real Estate Management System",
+      description: "This Property/Real Estate Management System project in Django is a full-stack Django web application that offers a clean, descriptive, and interactive user interface for viewing and registering for real estate. Responsive pages and tabs for home, about us, and featured listings",
+      imgUrl: propertyImage,
     },
     {
       title: "Business Startup",
@@ -53,7 +54,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Here in the projects section of my portfolio, you'll find a curated selection of my most recent and notable work. Each project is an opportunity for me to showcase my skills, creativity, and problem-solving abilities. I am constantly striving to push the boundaries and find new and innovative solutions to the challenges I encounter in my work. I hope this section provides a comprehensive overview of my capabilities and demonstrates my commitment to excellence in everything I do.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>

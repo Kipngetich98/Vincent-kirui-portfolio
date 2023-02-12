@@ -2,8 +2,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { MailchimpForm } from "./MailchimpForm";
 import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
-import app from '../assets/img/app.png'
-import email from '../assets/img/email.jpg'
+import app from '../assets/img/app.png';
+import email from '../assets/img/email.jpg';
+import github from '../assets/img/github.png';
 
 export const Footer = () => {
   return (
@@ -19,6 +20,7 @@ export const Footer = () => {
             <a href="https://www.linkedin.com/in/vincent-kirui-b814101a2/"><img src={navIcon1} alt="" /></a>
             <a href=" https://wa.me/254799476072"><img src={app} alt="" /></a>
             <a href="mailto:kiruivinie1@gmail.com"><img src={email} alt="" /></a>
+            <a href="https://github.com/Kipngetich98"><img src={github} alt="" /></a>
             </div>
             <p>Copyright 2022. All Rights Reserved</p>
           </Col>
