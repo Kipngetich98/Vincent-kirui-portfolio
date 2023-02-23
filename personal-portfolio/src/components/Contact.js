@@ -91,7 +91,7 @@ export const Contact = () => {
                   isVisible ? "animate__animated animate__fadeInUp animate__delay-1s form-container" : ""
                 }>
                   <h2 className="text-center">
-                    Connect with us
+                    Connect with me
                   </h2>
                   {status.success && (
                     <div className="alert alert-success">

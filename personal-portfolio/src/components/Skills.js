@@ -33,7 +33,19 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Python | Django | JavaScript/Typescript | PostgreSQL | Docker | SQL | Firebase |Data analysis | Software tesing (mobile and web) | Git | Cloud Functions | basic deployment | Machine learning | CRUD Applications |Agile/scrum | Statistical Modelling |Customer Service & Relationship Management | USSD | Analytical Skills | Information Flow Management | Research & Development | Data Management | Team Player | Good Communication & Interpersonal Skills | Jira and TestRail  test management tools</p>
+                        <p>
+                          {[
+                            "Programming - Python, Django, JavaScript/Typescript, React, USSD",
+                            "Database - PostgreSQL, SQL, Docker, AWS, Firebase, basic deployment",
+                            "Software testing - Jest, selenium, Mocha-Chai, Cypress, Jira and Test Rail test management tools",
+                            "Machine learning - built and trained a random forest model to predict loan defaults in my final year project for Financial Engineering",
+                            "CRUD Applications/REST, Agile/Scrum",
+                            "Statistical Modeling, Analytical Skills, Research & Development, Data Management"
+                          ].map((skill, index) => (
+                            <div key={index}>{skill}</div>
+                          ))}
+                        </p>
+
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="" />

@@ -1,12 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import creditscoring from '../assets/img/creditscoring.png';
 import scraped from "../assets/img/scraped.jpg";
 import propertyImage from "../assets/img/propertyImage.png";
+import dataengproj from "../assets/img/dataengproj.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -29,18 +29,18 @@ export const Projects = () => {
       imgUrl: propertyImage,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Data Engineering ",
+      description: "This projects runs on docker, reads a csv file , generate a schema by converting the dataframe (the dataset is too big and its read in chunks of 100000) into a DDl, put the schema into postgres database, convert the dataframe to sql to facilate inserting into postgres and finally insert the data into database table. From his point SQL commands can be used to read, read and alter the data in postgres.",
+      imgUrl: dataengproj,
     },
     {
       title: "Business Startup",
-      description: "Design & Development",
+      description: "Coming soon",
       imgUrl: projImg2,
     },
     {
       title: "Business Startup",
-      description: "Design & Development",
+      description: "Coming Soon",
       imgUrl: projImg3,
     },
   ];
@@ -54,7 +54,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Here in the projects section of my portfolio, you'll find a curated selection of my most recent and notable work. Each project is an opportunity for me to showcase my skills, creativity, and problem-solving abilities. I am constantly striving to push the boundaries and find new and innovative solutions to the challenges I encounter in my work. I hope this section provides a comprehensive overview of my capabilities and demonstrates my commitment to excellence in everything I do.</p>
+                <p>Here in the projects section of my portfolio, you'll find a curated selection of my most recent and notable work. Each project is an opportunity for me to showcase my skills, creativity, and problem-solving abilities. I am constantly striving to push the boundaries and find new and innovative solutions to the challenges I encounter in my work. I hope this section provides a comprehensive overview of my capabilities and demonstrates my commitment to excellence in everything I do. In-house projects are not included.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -83,10 +83,10 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>No more projects at this section at the moment.</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>No more projects at this section at the moment.</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
