@@ -1,12 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import creditscoring from '../assets/img/creditscoring.png';
 import scraped from "../assets/img/scraped.jpg";
 import propertyImage from "../assets/img/propertyImage.png";
 import dataengproj from "../assets/img/dataengproj.png";
+import leave from "../assets/img/leave.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -34,9 +34,9 @@ export const Projects = () => {
       imgUrl: dataengproj,
     },
     {
-      title: "Business Startup",
-      description: "Coming soon",
-      imgUrl: projImg2,
+      title: "Online Leave Management System",
+      description: "This project features a web-based employee management system with various features such as a login page where employees can enter their credentials to access the system. A register page is also provided for new employees to create their login credentials. The home page serves as the system's default page for customers visiting the website. Additionally, the system includes a leave application page where only authorized personnel such as the CEO, Manager, and Supervisor can accept or reject an employee's leave application. Employees can also view and track their leave applications through the My Application page",
+      imgUrl: leave,
     },
     {
       title: "Business Startup",
